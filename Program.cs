@@ -37,6 +37,7 @@ namespace LogTemp
                         match => int.Parse(match.Groups[3].Value)
                     );
         }
+        
         private static Dictionary<string, int> GetTemperatures()
         {
             var regex = new Regex(@"^#(\d+)\s+(\S+)\s+(\d+)C", RegexOptions.Multiline);
